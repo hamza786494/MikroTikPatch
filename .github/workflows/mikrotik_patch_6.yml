@@ -406,4 +406,3 @@ jobs:
           all_packages-x86-${{ env.LATEST_VERSION }}.zip
           mikrotik-${{ env.LATEST_VERSION }}.iso
           chr-${{ env.LATEST_VERSION }}*.zip
-  
