@@ -406,20 +406,4 @@ jobs:
           all_packages-x86-${{ env.LATEST_VERSION }}.zip
           mikrotik-${{ env.LATEST_VERSION }}.iso
           chr-${{ env.LATEST_VERSION }}*.zip
-    jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Build ISO
-        run: |
-          # commands that create mikrotik-${{ env.LATEST_VERSION }}.iso
-
-      - name: Upload patched ISO   # 👈 paste here, after build step
-        uses: actions/upload-artifact@v3
-        with:
-          name: mikrotik-iso-${{ env.LATEST_VERSION }}
-          path: mikrotik-${{ env.LATEST_VERSION }}.iso
   
